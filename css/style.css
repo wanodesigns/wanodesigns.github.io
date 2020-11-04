@@ -616,7 +616,7 @@ form {
   position: relative;
 }
 form > * {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
 }
 form .fieldset {
@@ -723,49 +723,6 @@ form textarea {
 
 /* END Contact Form GETFORM ENDPOINT */
 
-/* Contact Form Bitrix24 */
-/* #bx_form_iframe_6 {
-  max-height: 809px !important;
-  min-height: 606px;
-  width: 100%;
-}
-
-.flexible-middle-width .content-wrap {
-  max-width: 100% !important;
-}
-
-.crm-webform-iframe {
-  background-color: transparent;
-}
-
-.content-wrap .content {
-  background-color: transparent;
-}
-
-.crm-webform-wrapper {
-  background: transparent;
-}
-
-.page-theme-transparent .content {
-  background: transparent !important;
-}
-
-.crm-webform-fieldset {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.crm-webform-fieldset .row {
-  margin-left: 1%;
-  margin-right: 1%;
-  flex-basis: 48%;
-}
-
-.crm-webform-group.crm-webform-captcha {
-  max-height: 108px;
-} */
-/* END Contact Form Bitrix24 */
-
 /* Footer Section */
 #footer {
   padding: 50px 20px 60px;
@@ -831,6 +788,67 @@ hr {
   text-align: right;
 }
 
+/* style switcher */
+.styleSwitches.active {
+  margin-left: 0;
+}
+.styleSwitches {
+  background: #eee;
+  z-index: 16000;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  margin-left: -150px;
+  transform: translateY(-77%);
+  width: 150px;
+  padding: 5px 0 5px 5px;
+  border-bottom-right-radius: 5px;
+  transition: margin-left .3s ease-in-out;
+  box-shadow: 0 0 20px #999;
+}
+.styleSwitches img {
+  position: absolute !important;
+  width: 40px !important;
+  height: 40px !important;
+  padding: 5px;
+  left: 150px !important;
+  background: #111;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  filter: grayscale(90%);
+  cursor: pointer;
+  pointer-events: visible !important;
+}
+.styleSwitches button {
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 4px 1px;
+  border: none;
+  cursor: pointer;
+  transition: border 0.2s;
+}
+.styleSwitches button:hover,
+.styleSwitches button:focus,
+.styleSwitches button.active {
+  filter: brightness(70%);
+}
+.styleSwitches button:nth-child(1) {
+  background: #bbb;
+}
+.styleSwitches button:nth-child(2) {
+  background: #0d4e74;
+}
+.styleSwitches button:nth-child(3) {
+  background: #01716a;
+}
+.styleSwitches button:nth-child(4) {
+  background: #d4164d;
+}
+.styleSwitches button:nth-child(5) {
+  background: #633485;
+}
+
 /* social-icons */
 .social-icons-left {
   width: 50px;
@@ -878,17 +896,6 @@ hr {
   color: #333;
 }
 
-.ColorSwitcher {
-  z-index: 16000;
-  visibility: hidden;
-}
-.ColorSwitcher__control {
-  background: #555;
-}
-.ColorSwitcher__switch:first-child {
-  border: 1px solid #d5d5d5;
-}
-
 /* MEDIA QUERIES */
 @media (min-width: 1550px) and (max-width: 1899px) {
   section.hero img#wayne {
@@ -913,7 +920,7 @@ hr {
   section.hero #right-intro {
     width: 60%;
   }
-  #style-switch {
+  /* #style-switch {
     display: flex;
     flex-direction: row;
     position: absolute;
@@ -922,7 +929,7 @@ hr {
     bottom: 22%;
     margin-top: -15vh;
     border: 1px solid #d5d5d5;
-  }
+  } */
 }
 
 @media screen and (max-width: 1199px) {
@@ -1065,9 +1072,9 @@ hr {
   .social-icons-left {
     display: none;
   }
-  .ColorSwitcher {
+  /* .styleSwitches {
     display: none;
-  }
+  } */
   /* } */
 
   section.services .row > * {
