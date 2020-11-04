@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WANO Web Design</title>
   <!-- CSS -->
-  <!-- Color Switcher -->
-  <link rel="stylesheet" href="dist/color-switcher.css">
-  
   <!-- flipster gallery -->
   <link rel="stylesheet" href="dist/jquery.flipster.min.css">
 
@@ -17,20 +14,12 @@
   <script src="dist/jquery.flipster.min.js"></script>
 
   <script src="dist/scrollreveal.min.js"></script>
-  
-  <!--Cookies-->
-  <script src="styleswitcher.js"></script>
-  
-  <!-- My CSS Styles -->
-  <!-- <link rel="stylesheet" href="css/white.css">
-  <link rel="stylesheet" href="css/teal.css">
-  <link rel="stylesheet" href="css/blue.css">
-  <link rel="stylesheet" href="css/pink.css">
-  <link rel="stylesheet" href="css/purple.css"> -->
-  <link rel="stylesheet" href="css/style.css">
 
-  <!-- CRISP chat widget -->
-  <!-- <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="86215109-036d-45cd-8526-2fb7d7b5b67e";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script> -->
+
+  <!-- My CSS Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" id="myStyles" href="css/blue.css">
+
 </head>
 
 <body id="top offset">
@@ -91,18 +80,32 @@
       </h2>
 
       <div id="right-intro">
-        <h3>Hi, I'm Wayne</h3>
-        <p>I make stunning websites to promote and grow your online presence.</p>
+        <h3>I'm Wayne</h3>
+        <p>I help businesses get online and get more customers through online marketing</p>
         <span>Give your business an upgrade.</span>
       </div>
     </div>
 
+    <div class="styleSwitches">
+
+      <button onclick="swapStyles('css/style.css')"></button>
+      <button onclick="swapStyles('css/blue.css')"></button>
+      <button onclick="swapStyles('css/teal.css')"></button>
+      <button onclick="swapStyles('css/pink.css')"></button>
+      <button onclick="swapStyles('css/purple.css')"></button>
+      <img src="images/Configure alt 3.png" onclick="styleToggle()">
+
+    </div>
+
     <!-- Social-Icons -->
     <div class="social-icons-left">
-      <a href=""><img src="images/facebook.png" alt=""></a>
-      <a href=""><img src="images/instagram.png" alt=""></a>
+
+      <a href="https://www.facebook.com/wanodesigns/">
+        <img src="images/facebook.png" target="_blank">
+      </a>
+      <!-- <a href=""><img src="images/instagram.png" alt=""></a>
       <a href=""><img src="images/twitter.png" alt=""></a>
-      <a href=""><img src="images/linkedin.png" alt=""></a>
+      <a href=""><img src="images/linkedin.png" alt=""></a> -->
     </div>
 
   </section>
@@ -222,7 +225,7 @@
                   loading="lazy">
               </picture>
               <div class="content">
-                <a href="https://portfolioprime.github.io/robotics/">
+                <a href="https://portfolioprime.github.io/robotics/" target="_blank">
                   <p>View <span>AI Robotics theme</span> in a new tab</p>
                 </a>
             </li>
@@ -239,7 +242,7 @@
                 <img src="images/gallery-img/dog-wide.png" data-src="images/gallery-img/dog-wide.png" loading="lazy">
               </picture>
               <div class="content">
-                <a href="https://portfolioprime.github.io/dogs/">
+                <a target="_blank" href="https://portfolioprime.github.io/dogs/">
                   <p>View <span>Man's Best Friend website</span> in a new tab</p>
                 </a>
               </div>
@@ -258,7 +261,7 @@
                   loading="lazy">
               </picture>
               <div class="content">
-                <a href="https://portfolioprime.github.io/fitness/">
+                <a target="_blank" href="https://portfolioprime.github.io/fitness/">
                   <p>View <span>Fitness Gym website</span> in a new tab</p>
                 </a>
             </li>
@@ -276,7 +279,7 @@
                   loading="lazy">
               </picture>
               <div class="content">
-                <a href="https://kaizenkungfu.co.za/">
+                <a target="_blank" href="https://kaizenkungfu.co.za/">
                   <p>View <span>Kaizen Kungfu website</span> in a new tab</p>
                 </a>
             </li>
@@ -294,7 +297,7 @@
                   data-src="images/gallery-img/panda-wide-746x5202.png" loading="lazy">
               </picture>
               <div class="content">
-                <a href="https://orphanlove81.github.io/">
+                <a target="_blank" href="https://orphanlove81.github.io/">
                   <p>View <span>English Teaching Site</span> in a new tab</p>
                 </a>
             </li>
@@ -312,7 +315,7 @@
                   loading="lazy">
               </picture>
               <div class="content">
-                <a href="https://portfolioprime.github.io/rosa/">
+                <a target="_blank" href="https://portfolioprime.github.io/rosa/">
                   <p>View <span>Rosa Restaurant website</span> in a new tab</p>
                 </a>
             </li>
@@ -331,7 +334,7 @@
                   loading="lazy">
               </picture>
               <div class="content">
-                <a href="https://portfolioprime.github.io/music/">
+                <a target="_blank" href="https://portfolioprime.github.io/music/">
                   <p>View <span>Music Workshop Theme</span> in a new tab</p>
                 </a>
             </li>
@@ -349,7 +352,7 @@
                   loading="lazy">
               </picture>
               <div class="content">
-                <a href="https://i-love-you-marvel-avenger-3000.github.io/">
+                <a target="_blank" href="https://i-love-you-marvel-avenger-3000.github.io/">
                   <p>View <span>Marvel Avengers Fanpage</span> in a new tab</p>
                 </a>
             </li>
@@ -367,7 +370,7 @@
                   loading="lazy">
               </picture>
               <div class="content">
-                <a href="https://portfolioprime.github.io/photo-portfolio/">
+                <a target="_blank" href="https://portfolioprime.github.io/photo-portfolio/">
                   <p>View <span>Photography Portfolio</span> in a new tab</p>
                 </a>
             </li>
@@ -385,7 +388,7 @@
                   loading="lazy">
               </picture>
               <div class="content">
-                <a href="https://portfolioprime.github.io/restaurant/">
+                <a target="_blank" href="https://portfolioprime.github.io/restaurant/">
                   <p>View <span>Restaurant theme</span> in a new tab</p>
                 </a>
             </li>
@@ -458,22 +461,6 @@
         </form>
         <!-- END GET FORM ENDPOINT with my custom form code -->
 
-        <!-- BITRIX24 Form defer to prevent render-blocking -->
-        <!-- <script id="bx24_form_inline" data-skip-moving="true">
-          (function (w, d, u, b) {
-            w['Bitrix24FormObject'] = b; w[b] = w[b] || function () {
-              arguments[0].ref = u;
-              (w[b].forms = w[b].forms || []).push(arguments[0])
-            };
-            if (w[b]['forms']) return;
-            var s = d.createElement('script'); s.async = 1; s.src = u + '?' + (1 * new Date());
-            var h = d.getElementsByTagName('script')[0]; h.parentNode.insertBefore(s, h);
-          })(window, document, 'https://b24-f0onpn.bitrix24.com/bitrix/js/crm/form_loader.js', 'b24form');
-
-          b24form({ "id": "6", "lang": "en", "sec": "wk76xf", "type": "inline" });
-        </script> -->
-        <!-- End BITRIX24 Form -->
-
       </div>
       <!-- <div class="contact-right-col">
         <img src="images/work-together.svg" alt="">
@@ -538,11 +525,6 @@
 
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
-  <!-- SCRIPTS -->
-  <script src="dist/color-switcher.js"></script>
-  <!-- TIDIO CHAT WIDGET -->
-  <!-- <script src="//code.tidio.co/zned2o29wyyibqnupww5zjdluwtbqce4.js" async></script> -->
-
 
   <script>
 
@@ -588,38 +570,28 @@
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
-    /////////////////////////////////////////////
-    //Start ColorSwitcher 
-    ////////////////////////////////////////////
-    var colorSheets = [
-      {
-        color: "#e8f5f3;",
-        title: "Switch to Default",
-        href: "./css/style.css"
-      },
-      {
-        color: "#3ba4a4",
-        title: "Switch to Teal",
-        href: "./css/teal.css"
-      },
-      {
-        color: "#507c9f",
-        title: "Switch to Blue",
-        href: "./css/blue.css"
-      },
-      {
-        color: "#ff4576",
-        title: "Switch to Pink",
-        href: "./css/pink.css"
-      },
-      {
-        color: "#b8a3c2",
-        title: "Switch to Purple",
-        href: "./css/purple.css"
-      }
-    ];
+    /////////////////////
+    //  ---------------
+    //     Set Theme
+    //  ---------------
+    /////////////////////
 
-    ColorSwitcher.init(colorSheets);
+    var setTheme = localStorage.getItem('theme');
+    if (setTheme == null) {
+      swapStyles('css/blue.css');
+    }
+    else {
+      swapStyles(setTheme);
+    }
+
+    function swapStyles(styleSheet) {
+      document.getElementById('myStyles').href = styleSheet;
+      localStorage.setItem('theme', styleSheet)
+    }
+
+    function styleToggle() {
+      document.querySelector('.styleSwitches').classList.toggle('active');
+    }
 
     /////////////////////
     /* Scroll Reveal */
@@ -780,7 +752,6 @@
 
   </script>
 
-<!-- <script async data-id="60095" src="https://cdn.widgetwhats.com/script.min.js"></script> -->
 </body>
 
 </html>
